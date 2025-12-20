@@ -1,0 +1,253 @@
+{
+    "source": "https://holidays-calendar.net/calendar_en/china_en.html",
+    "country": "China",
+    "countryAlpha2Code": "CN",
+    "countryAlpha3Code": "CHN",
+    "holidays": [
+        {
+            "date": "2025-01-01",
+            "holiday": "New Year's Day"
+        },
+        {
+            "date": "2025-01-28",
+            "holiday": "Chinese New Year"
+        },
+        {
+            "date": "2025-01-29",
+            "holiday": "Chinese New Year"
+        },
+        {
+            "date": "2025-01-30",
+            "holiday": "Chinese New Year"
+        },
+        {
+            "date": "2025-01-31",
+            "holiday": "Chinese New Year"
+        },
+        {
+            "date": "2025-02-01",
+            "holiday": "Chinese New Year"
+        },
+        {
+            "date": "2025-02-02",
+            "holiday": "Chinese New Year"
+        },
+        {
+            "date": "2025-02-03",
+            "holiday": "Chinese New Year"
+        },
+        {
+            "date": "2025-02-04",
+            "holiday": "Chinese New Year"
+        },
+        {
+            "date": "2025-04-04",
+            "holiday": "Qingming Festival"
+        },
+        {
+            "date": "2025-04-05",
+            "holiday": "Qingming Festival"
+        },
+        {
+            "date": "2025-04-06",
+            "holiday": "Qingming Festival"
+        },
+        {
+            "date": "2025-05-01",
+            "holiday": "Labour Day"
+        },
+        {
+            "date": "2025-05-02",
+            "holiday": "Labour Day"
+        },
+        {
+            "date": "2025-05-03",
+            "holiday": "Labour Day"
+        },
+        {
+            "date": "2025-05-04",
+            "holiday": "Labour Day"
+        },
+        {
+            "date": "2025-05-05",
+            "holiday": "Labour Day"
+        },
+        {
+            "date": "2025-05-31",
+            "holiday": "Dragon Boat Festival"
+        },
+        {
+            "date": "2025-06-01",
+            "holiday": "Dragon Boat Festival"
+        },
+        {
+            "date": "2025-06-02",
+            "holiday": "Dragon Boat Festival"
+        },
+        {
+            "date": "2025-10-01",
+            "holiday": "National Day and Mid-Autumn Festival"
+        },
+        {
+            "date": "2025-10-02",
+            "holiday": "National Day and Mid-Autumn Festival"
+        },
+        {
+            "date": "2025-10-03",
+            "holiday": "National Day and Mid-Autumn Festival"
+        },
+        {
+            "date": "2025-10-04",
+            "holiday": "National Day and Mid-Autumn Festival"
+        },
+        {
+            "date": "2025-10-05",
+            "holiday": "National Day and Mid-Autumn Festival"
+        },
+        {
+            "date": "2025-10-06",
+            "holiday": "National Day and Mid-Autumn Festival"
+        },
+        {
+            "date": "2025-10-07",
+            "holiday": "National Day and Mid-Autumn Festival"
+        },
+        {
+            "date": "2025-10-08",
+            "holiday": "National Day and Mid-Autumn Festival"
+        },
+        {
+            "date": "2026-01-01",
+            "holiday": "New Year's Day"
+        },
+        {
+            "date": "2026-01-02",
+            "holiday": "New Year's Day"
+        },
+        {
+            "date": "2026-01-03",
+            "holiday": "New Year's Day"
+        },
+        {
+            "date": "2026-02-15",
+            "holiday": "Chinese New Year"
+        },
+        {
+            "date": "2026-02-16",
+            "holiday": "Chinese New Year"
+        },
+        {
+            "date": "2026-02-17",
+            "holiday": "Chinese New Year"
+        },
+        {
+            "date": "2026-02-18",
+            "holiday": "Chinese New Year"
+        },
+        {
+            "date": "2026-02-19",
+            "holiday": "Chinese New Year"
+        },
+        {
+            "date": "2026-02-20",
+            "holiday": "Chinese New Year"
+        },
+        {
+            "date": "2026-02-21",
+            "holiday": "Chinese New Year"
+        },
+        {
+            "date": "2026-02-22",
+            "holiday": "Chinese New Year"
+        },
+        {
+            "date": "2026-02-23",
+            "holiday": "Chinese New Year"
+        },
+        {
+            "date": "2026-04-04",
+            "holiday": "Qingming Festival"
+        },
+        {
+            "date": "2026-04-05",
+            "holiday": "Qingming Festival"
+        },
+        {
+            "date": "2026-04-06",
+            "holiday": "Qingming Festival"
+        },
+        {
+            "date": "2026-05-01",
+            "holiday": "Labour Day"
+        },
+        {
+            "date": "2026-05-02",
+            "holiday": "Labour Day"
+        },
+        {
+            "date": "2026-05-03",
+            "holiday": "Labour Day"
+        },
+        {
+            "date": "2026-05-04",
+            "holiday": "Labour Day"
+        },
+        {
+            "date": "2026-05-05",
+            "holiday": "Labour Day"
+        },
+        {
+            "date": "2026-06-19",
+            "holiday": "Dragon Boat Festival"
+        },
+        {
+            "date": "2026-06-20",
+            "holiday": "Dragon Boat Festival"
+        },
+        {
+            "date": "2026-06-21",
+            "holiday": "Dragon Boat Festival"
+        },
+        {
+            "date": "2026-09-25",
+            "holiday": "Mid-Autumn Festival"
+        },
+        {
+            "date": "2026-09-26",
+            "holiday": "Mid-Autumn Festival"
+        },
+        {
+            "date": "2026-09-27",
+            "holiday": "Mid-Autumn Festival"
+        },
+        {
+            "date": "2026-10-01",
+            "holiday": "National Day"
+        },
+        {
+            "date": "2026-10-02",
+            "holiday": "National Day"
+        },
+        {
+            "date": "2026-10-03",
+            "holiday": "National Day"
+        },
+        {
+            "date": "2026-10-04",
+            "holiday": "National Day"
+        },
+        {
+            "date": "2026-10-05",
+            "holiday": "National Day"
+        },
+        {
+            "date": "2026-10-06",
+            "holiday": "National Day"
+        },
+        {
+            "date": "2026-10-07",
+            "holiday": "National Day"
+        }
+    ],
+    "updated_on": "2025-12-20T02:45:04"
+}

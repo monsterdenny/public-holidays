@@ -1,0 +1,137 @@
+{
+    "source": "https://holidays-calendar.net/calendar_en/vietnam_en.html",
+    "country": "Vietnam",
+    "countryAlpha2Code": "VN",
+    "countryAlpha3Code": "VNM",
+    "holidays": [
+        {
+            "date": "2025-01-01",
+            "holiday": "New Year's Day"
+        },
+        {
+            "date": "2025-01-25",
+            "holiday": "Tet Holiday"
+        },
+        {
+            "date": "2025-01-26",
+            "holiday": "Tet Holiday"
+        },
+        {
+            "date": "2025-01-27",
+            "holiday": "Tet Holiday"
+        },
+        {
+            "date": "2025-01-28",
+            "holiday": "Tet Holiday"
+        },
+        {
+            "date": "2025-01-29",
+            "holiday": "Tet Holiday"
+        },
+        {
+            "date": "2025-01-30",
+            "holiday": "Tet Holiday"
+        },
+        {
+            "date": "2025-01-31",
+            "holiday": "Tet Holiday"
+        },
+        {
+            "date": "2025-02-01",
+            "holiday": "Tet Holiday"
+        },
+        {
+            "date": "2025-02-02",
+            "holiday": "Tet Holiday"
+        },
+        {
+            "date": "2025-04-07",
+            "holiday": "Hung Kings Temple Festival"
+        },
+        {
+            "date": "2025-04-30",
+            "holiday": "Reunification Day"
+        },
+        {
+            "date": "2025-05-01",
+            "holiday": "Labor Day"
+        },
+        {
+            "date": "2025-05-02",
+            "holiday": "special holiday"
+        },
+        {
+            "date": "2025-09-01",
+            "holiday": "National Day"
+        },
+        {
+            "date": "2025-09-02",
+            "holiday": "National Day"
+        },
+        {
+            "date": "2026-01-01",
+            "holiday": "New Year's Day"
+        },
+        {
+            "date": "2026-02-14",
+            "holiday": "Tet Holiday"
+        },
+        {
+            "date": "2026-02-15",
+            "holiday": "Tet Holiday"
+        },
+        {
+            "date": "2026-02-16",
+            "holiday": "Tet Holiday"
+        },
+        {
+            "date": "2026-02-17",
+            "holiday": "Tet Holiday"
+        },
+        {
+            "date": "2026-02-18",
+            "holiday": "Tet Holiday"
+        },
+        {
+            "date": "2026-02-19",
+            "holiday": "Tet Holiday"
+        },
+        {
+            "date": "2026-02-20",
+            "holiday": "Tet Holiday"
+        },
+        {
+            "date": "2026-02-21",
+            "holiday": "Tet Holiday"
+        },
+        {
+            "date": "2026-02-22",
+            "holiday": "Tet Holiday"
+        },
+        {
+            "date": "2026-04-26",
+            "holiday": "Hung Kings Temple Festival"
+        },
+        {
+            "date": "2026-04-30",
+            "holiday": "Reunification Day"
+        },
+        {
+            "date": "2026-05-01",
+            "holiday": "Labor Day"
+        },
+        {
+            "date": "2026-08-31",
+            "holiday": "special holiday"
+        },
+        {
+            "date": "2026-09-01",
+            "holiday": "National Day"
+        },
+        {
+            "date": "2026-09-02",
+            "holiday": "National Day"
+        }
+    ],
+    "updated_on": "2025-12-20T02:45:20"
+}

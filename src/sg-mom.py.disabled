@@ -1,0 +1,68 @@
+from pyquery import PyQuery as pq
+from lxml import etree
+from datetime import datetime
+
+import json
+import urllib
+
+# MOM Public Holidays
+d = pq(url="https://www.mom.gov.sg/employment-practices/public-holidays")
+
+
+# Get the dates
+a = [i.text() for i in d.items('table.table--holiday tbody tr td:first')]
+
+# Remove the span and em tags
+d('table.table--holiday tbody tr td:last span').remove()
+d('table.table--holiday tbody tr td:last em').remove()
+
+# Get the holiday names
+b = [i.text() for i in d.items('table.table--holiday tbody tr td:last')]
+
+# Check if lengths match
+if len(a) != len(b):
+    print(f"Error: Length mismatch between dates ({len(a)}) and holiday names ({len(b)})")
+    exit(1)
+
+result = [[a[i], b[i]] for i in range(len(a))]
+
+# Split the dates if there are multiple dates
+new_result = []
+for i in range(len(result)):
+    if '\n' in result[i][0]:
+        # Split the date part into multiple dates
+        dates = result[i][0].split('\n')
+        for date in dates:
+            new_result.append([date.strip(), result[i][1]])
+    else:
+        new_result.append(result[i])
+
+result = new_result
+
+# Convert the dates to yyyy-mm-dd format
+for i in range(len(result)):
+    # Convert date string to datetime object then back to string in yyyy-mm-dd format
+    try:
+        date_obj = datetime.strptime(result[i][0], '%d %B %Y')
+        result[i][0] = date_obj.strftime('%Y-%m-%d')
+    except ValueError as e:
+        print(f"Could not parse date: {result[i][0]}")
+        continue
+
+# Convert the result to a list of object
+result = [{"date": item[0], "holidayName": item[1]} for item in result]
+
+# Convert the result to a JSON string
+
+print(result)
+
+# Write the JSON string to a file
+jsonResult = json.dumps({
+    "countryName": "SINGAPORE",
+    "countryCodeAlpha3": "SGP", 
+    "countryCodeAlpha2": "SG",
+    "holidays": result
+}, indent=2)
+
+with open('../data/sgp.json', 'w') as f:
+    f.write(jsonResult)
