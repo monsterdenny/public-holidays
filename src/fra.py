@@ -1,43 +1,25 @@
-from datetime import datetime
-from functions import getHolidayData, getYearLinks, addMissingDayField, writeJsonIfChanged
-
-# Date time format
-outputFormat = "%Y-%m-%d"
+from functions import addMissingDayField, writeJsonIfChanged, createHolidayResult, getOutputPath
+from parser.holidays_calendar import getHolidaysCalendarData
 
 # Source
 url = "https://holidays-calendar.net/calendar_en/france_en.html"
+country_alpha3_code = "FRA"
+outputPath = getOutputPath(country_alpha3_code)
 
-yearLinks = getYearLinks(url)
-
-datas = [];
-
-for link in yearLinks:
-  
-  # grab the data
-  print("\n\nworking on ", link);
-  data = getHolidayData(link)
-
-  datas = datas + data
-
-# sort by dates
-datas.sort(key=lambda r: r["date"])
-
-for item in datas:
-    item["date"] = item["date"].strftime(outputFormat)
+datas = getHolidaysCalendarData(url)
 
 
-# Output to file in json format
-result = {
-  "source": url,
-  "country": "France",
-  "countryAlpha2Code": "FR",
-  "countryAlpha3Code": "FRA",
-  "holidays": datas,
-  "updated_on": datetime.now().replace(microsecond=0).isoformat()
-}
+# Create standardised result dictionary
+result = createHolidayResult(
+  source_url=url,
+  country="France",
+  country_alpha2_code="FR",
+  country_alpha3_code=country_alpha3_code,
+  holidays_data=datas
+)
 
 # Add missing day fields
 result = addMissingDayField(result)
 
 # Write JSON file only if data has changed
-writeJsonIfChanged(result, '../data/fra.json')
+writeJsonIfChanged(result, outputPath)

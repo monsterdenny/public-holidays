@@ -1,115 +1,57 @@
-import requests
-from lxml import html
-from datetime import datetime, timedelta
+
+
+from datetime import datetime
 import json
 import os
 
-def getYearLinks(url: str) -> list:
-  # Get html content from source
-  response = requests.get(url)
 
-  # Parse using lxml
-  tree = html.fromstring(response.content)
-
-  # Resolve all relative links to be absolute
-  tree.make_links_absolute(url)
-
-
-
-  # Determine number of years to scrape
-  yearLinks = tree.xpath("//div[contains(@class, 'year-menu')]/ul/li[not(contains(@class, 'holTBD'))]/a/@href")
-
-  return yearLinks
-
-
-
-
-def getHolidayData(url: str) -> list:
-  # Date formats
-  input_format = "%B %d %Y"
-  output_format = "%Y-%m-%d"
-
-  # Get html content from source
-  response = requests.get(url)
-
-  # Parse using lxml
-  tree = html.fromstring(response.content)
+def getOutputPath(country_alpha3_code: str) -> str:
+  """
+  Generates the output path for a holiday JSON file based on country alpha-3 code.
   
-  br_elements = tree.xpath("//br")
-
-  # Iterate and drop each <br> tag
-  for br in br_elements:
-    br.drop_tag()
-
-  # Grab the page title
-  title = tree.xpath('//title/text()')[0] if tree.xpath('//title/text()') else "No title found"
-
-  # extract year from title (Eg, "France Publich Holidays 2025")
-  year = "".join([char for char in title if char.isdigit()])
-
-  # Grab the holiday data
-  selector = "//div[ contains(@class, 'details') and not(.//span/span[contains(text(), 'Regional')]) ]"
-
-  holidays = tree.xpath(selector + "/div/span/span[1]/text()")
-
-  holidayText = tree.xpath(selector + "/div/span/span[2]/text()")
-
-  if len(holidays) != len(holidayText):
-    print("Exception array length does not match")
-    exit(1)
-
-  datas = []
-  for i in range(len(holidays)):
-    dateString = holidays[i].strip()
-
-    holidayName = holidayText[i].strip()
-
+  Args:
+    country_alpha3_code: ISO 3166-1 alpha-3 country code (e.g., "SGP", "FRA")
     
-
-    # check if holiday span across few days
-    if "–" in dateString:
-      dates = dateString.split("–")
-      if len(dates) != 2:
-        print("Error unable to parse date range ",dateString)
-        exit(1)
-    
-      startDate = dates[0].strip()
-      endDate = dates[1].strip()
-
-      if not(" " in endDate):
-        #no month
-        month = startDate.split(" ")[0]
-        endDate = month + " " + endDate
-    
-      #Loop from start date till end date, append to array
-      start = datetime.strptime(startDate + " " + year, input_format)
-      end = datetime.strptime(endDate + " " + year, input_format)
-
-      currentDate  = start
-      while currentDate <= end:
-        datas.append({"date": currentDate,"holiday":holidayName})
-
-        currentDate += timedelta(days=1)
-
-    else:
-
-      # not date range
-      datas.append({"date":datetime.strptime(dateString + " " + year, input_format),"holiday":holidayName})
+  Returns:
+    Output path string in format '../data/{code}.json' (lowercase)
+  """
+  return '../data/{}.json'.format(country_alpha3_code.lower())
 
 
-
-    
+def createHolidayResult(source_url: str, country: str, country_alpha2_code: str, country_alpha3_code: str, holidays_data: list, country_regions: list = None) -> dict:
+  """
+  Creates a standardised holiday result dictionary.
   
+  Args:
+    source_url: Source URL where the holiday data was crawled from
+    country: Country name
+    country_alpha2_code: ISO 3166-1 alpha-2 country code (e.g., "SG", "FR")
+    country_alpha3_code: ISO 3166-1 alpha-3 country code (e.g., "SGP", "FRA")
+    holidays_data: List of holiday dictionaries with 'date' and 'holiday' fields
+    country_regions: Optional list of country regions (e.g., ["All", "Scotland", "England and Wales", "Northern Ireland"])
+    
+  Returns:
+    Dictionary with standardised holiday data structure
+  """
+  result = {
+    "source": source_url,
+    "country": country,
+    "countryAlpha2Code": country_alpha2_code,
+    "countryAlpha3Code": country_alpha3_code,
+    "holidays": holidays_data,
+    "updated_on": datetime.now().replace(microsecond=0).isoformat()
+  }
+  
+  # Add countryRegions if provided
+  if country_regions:
+    result["countryRegions"] = country_regions
+  
+  return result
 
 
 
-  # dates = [{"holiday": datetime.strptime(holidays[i].strip() + " " + year, input_format).strftime(output_format) ,"holidayName": holidayText[i].strip()} for i in range(len(holidays))]
 
-  print(f"Total records => {len(datas)}\n")
 
-  #print("Dates\n",dates)
-
-  return datas
 
 
 def addMissingDayField(data: dict) -> dict:
@@ -157,16 +99,19 @@ def writeJsonIfChanged(result: dict, json_file_path: str) -> None:
       with open(json_file_path, 'r', encoding='utf-8') as f:
         existing_data = json.load(f)
       
-      # Normalize both datasets for comparison (sort by date and convert to comparable format)
-      def normalize_holidays(holidays):
-        # Create a list of tuples (date, holiday) for comparison, ignoring 'day' field
-        return sorted([(h.get('date', ''), h.get('holiday', '')) for h in holidays])
+      # Compare entire holiday objects (full payload comparison)
+      existing_holidays_list = existing_data.get('holidays', [])
+      new_holidays_list = result.get('holidays', [])
       
-      existing_holidays = normalize_holidays(existing_data.get('holidays', []))
-      new_holidays = normalize_holidays(result.get('holidays', []))
+      # Sort both lists by date for comparison
+      def sort_by_date(holidays):
+        return sorted(holidays, key=lambda h: h.get('date', ''))
       
-      # Compare holidays data
-      if existing_holidays == new_holidays:
+      existing_sorted = sort_by_date(existing_holidays_list)
+      new_sorted = sort_by_date(new_holidays_list)
+      
+      # Compare the full holiday objects
+      if existing_sorted == new_sorted:
         print("No changes detected. Keeping existing file.")
         print(f"Existing file last updated: {existing_data.get('updated_on', 'N/A')}")
       else:

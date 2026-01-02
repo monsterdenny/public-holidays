@@ -1,7 +1,7 @@
 import requests
 from datetime import datetime
 from lxml import html
-from functions import addMissingDayField, writeJsonIfChanged
+from functions import addMissingDayField, writeJsonIfChanged, createHolidayResult, getOutputPath
 
 def crawlData(year:int) -> list:
   
@@ -31,6 +31,8 @@ def crawlData(year:int) -> list:
 
 #malaysia holiday source
 url = "https://www.officeholidays.com/countries/malaysia"
+country_alpha3_code = "MYR"
+outputPath = getOutputPath(country_alpha3_code)
 
 startYear = datetime.now().year
 endYear = startYear + 1
@@ -40,18 +42,17 @@ finalData = []
 for yearToCrawl in dataYears:
   finalData += crawlData(yearToCrawl)
 
-# Output to file in json format
-result = {
-  "source": url,
-  "country": "Malaysia",
-  "countryAlpha2Code": "MY",
-  "countryAlpha3Code": "MYR",
-  "holidays": finalData,
-  "updated_on": datetime.now().replace(microsecond=0).isoformat()
-}
+# Create standardised result dictionary
+result = createHolidayResult(
+  source_url=url,
+  country="Malaysia",
+  country_alpha2_code="MY",
+  country_alpha3_code=country_alpha3_code,
+  holidays_data=finalData
+)
 
 # Add missing day fields
 result = addMissingDayField(result)
 
 # Write JSON file only if data has changed
-writeJsonIfChanged(result, '../data/myr.json')
+writeJsonIfChanged(result, outputPath)

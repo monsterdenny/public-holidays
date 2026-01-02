@@ -1,23 +1,21 @@
 from functions import addMissingDayField, writeJsonIfChanged, createHolidayResult, getOutputPath
-from parser.holidays_calendar import getHolidaysCalendarData
-
-
-
+from parser.gov_uk import getGovUkBankHolidays
 
 # Source
-url = "https://holidays-calendar.net/calendar_en/china_en.html"
-country_alpha3_code = "CHN"
+url = "https://www.gov.uk/bank-holidays"
+country_alpha3_code = "GBR"
 outputPath = getOutputPath(country_alpha3_code)
 
-datas = getHolidaysCalendarData(url)
+datas = getGovUkBankHolidays(url)
 
 # Create standardised result dictionary
 result = createHolidayResult(
   source_url=url,
-  country="China",
-  country_alpha2_code="CN",
+  country="United Kingdom",
+  country_alpha2_code="GB",
   country_alpha3_code=country_alpha3_code,
-  holidays_data=datas
+  holidays_data=datas,
+  country_regions=["All", "Scotland", "England and Wales", "Northern Ireland"]
 )
 
 # Add missing day fields

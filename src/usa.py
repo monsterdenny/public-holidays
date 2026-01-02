@@ -5,8 +5,8 @@ from parser.holidays_calendar import getHolidaysCalendarData
 
 
 # Source
-url = "https://holidays-calendar.net/calendar_en/china_en.html"
-country_alpha3_code = "CHN"
+url = "https://holidays-calendar.net/calendar_en/usa_en.html"
+country_alpha3_code = "USA"
 outputPath = getOutputPath(country_alpha3_code)
 
 datas = getHolidaysCalendarData(url)
@@ -14,8 +14,8 @@ datas = getHolidaysCalendarData(url)
 # Create standardised result dictionary
 result = createHolidayResult(
   source_url=url,
-  country="China",
-  country_alpha2_code="CN",
+  country="United States",
+  country_alpha2_code="US",
   country_alpha3_code=country_alpha3_code,
   holidays_data=datas
 )

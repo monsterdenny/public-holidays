@@ -6,92 +6,114 @@
     "holidays": [
         {
             "date": "2025-01-01",
-            "holiday": "New Year's Day"
+            "holiday": "New Year's Day",
+            "day": "Wednesday"
         },
         {
             "date": "2025-04-21",
-            "holiday": "Easter Monday"
+            "holiday": "Easter Monday",
+            "day": "Monday"
         },
         {
             "date": "2025-05-01",
-            "holiday": "Labor Day"
+            "holiday": "Labor Day",
+            "day": "Thursday"
         },
         {
             "date": "2025-05-08",
-            "holiday": "V-E Day"
+            "holiday": "V-E Day",
+            "day": "Thursday"
         },
         {
             "date": "2025-05-29",
-            "holiday": "Ascension Day"
+            "holiday": "Ascension Day",
+            "day": "Thursday"
         },
         {
             "date": "2025-06-09",
-            "holiday": "Whit Monday"
+            "holiday": "Whit Monday",
+            "day": "Monday"
         },
         {
             "date": "2025-07-14",
-            "holiday": "Bastille Day"
+            "holiday": "Bastille Day",
+            "day": "Monday"
         },
         {
             "date": "2025-08-15",
-            "holiday": "Assumption Day"
+            "holiday": "Assumption Day",
+            "day": "Friday"
         },
         {
             "date": "2025-11-01",
-            "holiday": "All Saints' Day"
+            "holiday": "All Saints' Day",
+            "day": "Saturday"
         },
         {
             "date": "2025-11-11",
-            "holiday": "Armistice Day"
+            "holiday": "Armistice Day",
+            "day": "Tuesday"
         },
         {
             "date": "2025-12-25",
-            "holiday": "Christmas"
+            "holiday": "Christmas",
+            "day": "Thursday"
         },
         {
             "date": "2026-01-01",
-            "holiday": "New Year's Day"
+            "holiday": "New Year's Day",
+            "day": "Thursday"
         },
         {
             "date": "2026-04-06",
-            "holiday": "Easter Monday"
+            "holiday": "Easter Monday",
+            "day": "Monday"
         },
         {
             "date": "2026-05-01",
-            "holiday": "Labor Day"
+            "holiday": "Labor Day",
+            "day": "Friday"
         },
         {
             "date": "2026-05-08",
-            "holiday": "V-E Day"
+            "holiday": "V-E Day",
+            "day": "Friday"
         },
         {
             "date": "2026-05-14",
-            "holiday": "Ascension Day"
+            "holiday": "Ascension Day",
+            "day": "Thursday"
         },
         {
             "date": "2026-05-25",
-            "holiday": "Whit Monday"
+            "holiday": "Whit Monday",
+            "day": "Monday"
         },
         {
             "date": "2026-07-14",
-            "holiday": "Bastille Day"
+            "holiday": "Bastille Day",
+            "day": "Tuesday"
         },
         {
             "date": "2026-08-15",
-            "holiday": "Assumption Day"
+            "holiday": "Assumption Day",
+            "day": "Saturday"
         },
         {
             "date": "2026-11-01",
-            "holiday": "All Saints' Day"
+            "holiday": "All Saints' Day",
+            "day": "Sunday"
         },
         {
             "date": "2026-11-11",
-            "holiday": "Armistice Day"
+            "holiday": "Armistice Day",
+            "day": "Wednesday"
         },
         {
             "date": "2026-12-25",
-            "holiday": "Christmas"
+            "holiday": "Christmas",
+            "day": "Friday"
         }
     ],
-    "updated_on": "2025-12-20T02:45:10"
+    "updated_on": "2026-01-02T09:34:33"
 }

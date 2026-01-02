@@ -1,0 +1,386 @@
+{
+    "source": "https://www.gov.uk/bank-holidays",
+    "country": "United Kingdom",
+    "countryAlpha2Code": "GB",
+    "countryAlpha3Code": "GBR",
+    "holidays": [
+        {
+            "date": "2026-01-01",
+            "holiday": "New Year\u2019s Day",
+            "region": [
+                "All"
+            ],
+            "day": "Thursday"
+        },
+        {
+            "date": "2026-01-02",
+            "holiday": "2nd January",
+            "region": [
+                "Scotland"
+            ],
+            "day": "Friday"
+        },
+        {
+            "date": "2026-01-04",
+            "holiday": "2nd January (substitute day)",
+            "region": [
+                "Scotland"
+            ],
+            "day": "Sunday"
+        },
+        {
+            "date": "2026-03-17",
+            "holiday": "St Patrick\u2019s Day",
+            "region": [
+                "Northern Ireland"
+            ],
+            "day": "Tuesday"
+        },
+        {
+            "date": "2026-03-18",
+            "holiday": "St Patrick\u2019s Day (substitute day)",
+            "region": [
+                "Northern Ireland"
+            ],
+            "day": "Wednesday"
+        },
+        {
+            "date": "2026-03-26",
+            "holiday": "Good Friday",
+            "region": [
+                "All"
+            ],
+            "day": "Thursday"
+        },
+        {
+            "date": "2026-03-29",
+            "holiday": "Easter Monday",
+            "region": [
+                "England and Wales",
+                "Northern Ireland"
+            ],
+            "day": "Sunday"
+        },
+        {
+            "date": "2026-03-29",
+            "holiday": "Good Friday",
+            "region": [
+                "All"
+            ],
+            "day": "Sunday"
+        },
+        {
+            "date": "2026-04-01",
+            "holiday": "Easter Monday",
+            "region": [
+                "England and Wales",
+                "Northern Ireland"
+            ],
+            "day": "Wednesday"
+        },
+        {
+            "date": "2026-04-03",
+            "holiday": "Good Friday",
+            "region": [
+                "Northern Ireland",
+                "Scotland"
+            ],
+            "day": "Friday"
+        },
+        {
+            "date": "2026-04-06",
+            "holiday": "Easter Monday",
+            "region": [
+                "England and Wales",
+                "Northern Ireland"
+            ],
+            "day": "Monday"
+        },
+        {
+            "date": "2026-04-14",
+            "holiday": "Good Friday",
+            "region": [
+                "All"
+            ],
+            "day": "Tuesday"
+        },
+        {
+            "date": "2026-04-17",
+            "holiday": "Easter Monday",
+            "region": [
+                "England and Wales",
+                "Northern Ireland"
+            ],
+            "day": "Friday"
+        },
+        {
+            "date": "2026-04-18",
+            "holiday": "Good Friday",
+            "region": [
+                "All"
+            ],
+            "day": "Saturday"
+        },
+        {
+            "date": "2026-04-21",
+            "holiday": "Easter Monday",
+            "region": [
+                "England and Wales",
+                "Northern Ireland"
+            ],
+            "day": "Tuesday"
+        },
+        {
+            "date": "2026-05-01",
+            "holiday": "Early May bank holiday",
+            "region": [
+                "All"
+            ],
+            "day": "Friday"
+        },
+        {
+            "date": "2026-05-03",
+            "holiday": "Early May bank holiday",
+            "region": [
+                "All"
+            ],
+            "day": "Sunday"
+        },
+        {
+            "date": "2026-05-04",
+            "holiday": "Early May bank holiday",
+            "region": [
+                "All"
+            ],
+            "day": "Monday"
+        },
+        {
+            "date": "2026-05-05",
+            "holiday": "Early May bank holiday",
+            "region": [
+                "All"
+            ],
+            "day": "Tuesday"
+        },
+        {
+            "date": "2026-05-06",
+            "holiday": "Early May bank holiday",
+            "region": [
+                "All"
+            ],
+            "day": "Wednesday"
+        },
+        {
+            "date": "2026-05-25",
+            "holiday": "Spring bank holiday",
+            "region": [
+                "All"
+            ],
+            "day": "Monday"
+        },
+        {
+            "date": "2026-05-26",
+            "holiday": "Spring bank holiday",
+            "region": [
+                "All"
+            ],
+            "day": "Tuesday"
+        },
+        {
+            "date": "2026-05-27",
+            "holiday": "Spring bank holiday",
+            "region": [
+                "All"
+            ],
+            "day": "Wednesday"
+        },
+        {
+            "date": "2026-05-29",
+            "holiday": "Spring bank holiday",
+            "region": [
+                "All"
+            ],
+            "day": "Friday"
+        },
+        {
+            "date": "2026-05-31",
+            "holiday": "Spring bank holiday",
+            "region": [
+                "All"
+            ],
+            "day": "Sunday"
+        },
+        {
+            "date": "2026-07-12",
+            "holiday": "Battle of the Boyne (Orangemen\u2019s Day)",
+            "region": [
+                "Northern Ireland"
+            ],
+            "day": "Sunday"
+        },
+        {
+            "date": "2026-07-13",
+            "holiday": "Battle of the Boyne (Orangemen\u2019s Day) (substitute day)",
+            "region": [
+                "Northern Ireland"
+            ],
+            "day": "Monday"
+        },
+        {
+            "date": "2026-07-14",
+            "holiday": "Battle of the Boyne (Orangemen\u2019s Day) (substitute day)",
+            "region": [
+                "Northern Ireland"
+            ],
+            "day": "Tuesday"
+        },
+        {
+            "date": "2026-08-02",
+            "holiday": "Summer bank holiday",
+            "region": [
+                "Scotland"
+            ],
+            "day": "Sunday"
+        },
+        {
+            "date": "2026-08-03",
+            "holiday": "Summer bank holiday",
+            "region": [
+                "Scotland"
+            ],
+            "day": "Monday"
+        },
+        {
+            "date": "2026-08-04",
+            "holiday": "Summer bank holiday",
+            "region": [
+                "Scotland"
+            ],
+            "day": "Tuesday"
+        },
+        {
+            "date": "2026-08-05",
+            "holiday": "Summer bank holiday",
+            "region": [
+                "Scotland"
+            ],
+            "day": "Wednesday"
+        },
+        {
+            "date": "2026-08-07",
+            "holiday": "Summer bank holiday",
+            "region": [
+                "Scotland"
+            ],
+            "day": "Friday"
+        },
+        {
+            "date": "2026-08-25",
+            "holiday": "Summer bank holiday",
+            "region": [
+                "England and Wales",
+                "Northern Ireland"
+            ],
+            "day": "Tuesday"
+        },
+        {
+            "date": "2026-08-26",
+            "holiday": "Summer bank holiday",
+            "region": [
+                "England and Wales",
+                "Northern Ireland"
+            ],
+            "day": "Wednesday"
+        },
+        {
+            "date": "2026-08-28",
+            "holiday": "Summer bank holiday",
+            "region": [
+                "England and Wales",
+                "Northern Ireland"
+            ],
+            "day": "Friday"
+        },
+        {
+            "date": "2026-08-30",
+            "holiday": "Summer bank holiday",
+            "region": [
+                "England and Wales",
+                "Northern Ireland"
+            ],
+            "day": "Sunday"
+        },
+        {
+            "date": "2026-08-31",
+            "holiday": "Summer bank holiday",
+            "region": [
+                "England and Wales",
+                "Northern Ireland"
+            ],
+            "day": "Monday"
+        },
+        {
+            "date": "2026-11-30",
+            "holiday": "St Andrew\u2019s Day",
+            "region": [
+                "Scotland"
+            ],
+            "day": "Monday"
+        },
+        {
+            "date": "2026-12-01",
+            "holiday": "St Andrew\u2019s Day (substitute day)",
+            "region": [
+                "Scotland"
+            ],
+            "day": "Tuesday"
+        },
+        {
+            "date": "2026-12-02",
+            "holiday": "St Andrew\u2019s Day (substitute day)",
+            "region": [
+                "Scotland"
+            ],
+            "day": "Wednesday"
+        },
+        {
+            "date": "2026-12-25",
+            "holiday": "Christmas Day",
+            "region": [
+                "All"
+            ],
+            "day": "Friday"
+        },
+        {
+            "date": "2026-12-26",
+            "holiday": "Boxing Day",
+            "region": [
+                "All"
+            ],
+            "day": "Saturday"
+        },
+        {
+            "date": "2026-12-27",
+            "holiday": "Christmas Day (substitute day)",
+            "region": [
+                "All"
+            ],
+            "day": "Sunday"
+        },
+        {
+            "date": "2026-12-28",
+            "holiday": "Boxing Day (substitute day)",
+            "region": [
+                "All"
+            ],
+            "day": "Monday"
+        }
+    ],
+    "updated_on": "2026-01-02T09:28:42",
+    "countryRegions": [
+        "All",
+        "Scotland",
+        "England and Wales",
+        "Northern Ireland"
+    ]
+}

@@ -1,0 +1,129 @@
+{
+    "source": "https://holidays-calendar.net/calendar_en/usa_en.html",
+    "country": "United States",
+    "countryAlpha2Code": "US",
+    "countryAlpha3Code": "USA",
+    "holidays": [
+        {
+            "date": "2025-01-01",
+            "holiday": "New Year's Day",
+            "day": "Wednesday"
+        },
+        {
+            "date": "2025-01-20",
+            "holiday": "Birthday of Martin Luther King, Jr.",
+            "day": "Monday"
+        },
+        {
+            "date": "2025-02-17",
+            "holiday": "Presidents Day / Washington's Birthday",
+            "day": "Monday"
+        },
+        {
+            "date": "2025-05-26",
+            "holiday": "Memorial Day",
+            "day": "Monday"
+        },
+        {
+            "date": "2025-06-19",
+            "holiday": "Juneteenth National Independence Day",
+            "day": "Thursday"
+        },
+        {
+            "date": "2025-07-04",
+            "holiday": "Independence Day",
+            "day": "Friday"
+        },
+        {
+            "date": "2025-09-01",
+            "holiday": "Labor Day",
+            "day": "Monday"
+        },
+        {
+            "date": "2025-10-13",
+            "holiday": "Columbus Day",
+            "day": "Monday"
+        },
+        {
+            "date": "2025-11-11",
+            "holiday": "Veterans Day",
+            "day": "Tuesday"
+        },
+        {
+            "date": "2025-11-27",
+            "holiday": "Thanksgiving Day",
+            "day": "Thursday"
+        },
+        {
+            "date": "2025-12-24",
+            "holiday": "Special Holiday for Federal Agencies",
+            "day": "Wednesday"
+        },
+        {
+            "date": "2025-12-25",
+            "holiday": "Christmas",
+            "day": "Thursday"
+        },
+        {
+            "date": "2025-12-26",
+            "holiday": "Special Holiday for Federal Agencies",
+            "day": "Friday"
+        },
+        {
+            "date": "2026-01-01",
+            "holiday": "New Year's Day",
+            "day": "Thursday"
+        },
+        {
+            "date": "2026-01-19",
+            "holiday": "Birthday of Martin Luther King, Jr.",
+            "day": "Monday"
+        },
+        {
+            "date": "2026-02-16",
+            "holiday": "Presidents Day / Washington's Birthday",
+            "day": "Monday"
+        },
+        {
+            "date": "2026-05-25",
+            "holiday": "Memorial Day",
+            "day": "Monday"
+        },
+        {
+            "date": "2026-06-19",
+            "holiday": "Juneteenth National Independence Day",
+            "day": "Friday"
+        },
+        {
+            "date": "2026-07-04",
+            "holiday": "Independence Day",
+            "day": "Saturday"
+        },
+        {
+            "date": "2026-09-07",
+            "holiday": "Labor Day",
+            "day": "Monday"
+        },
+        {
+            "date": "2026-10-12",
+            "holiday": "Columbus Day",
+            "day": "Monday"
+        },
+        {
+            "date": "2026-11-11",
+            "holiday": "Veterans Day",
+            "day": "Wednesday"
+        },
+        {
+            "date": "2026-11-26",
+            "holiday": "Thanksgiving Day",
+            "day": "Thursday"
+        },
+        {
+            "date": "2026-12-25",
+            "holiday": "Christmas",
+            "day": "Friday"
+        }
+    ],
+    "updated_on": "2025-12-25T11:52:06"
+}

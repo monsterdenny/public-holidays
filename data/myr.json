@@ -5,109 +5,70 @@
     "countryAlpha3Code": "MYR",
     "holidays": [
         {
-            "date": "2025-01-29",
-            "holiday": "Chinese New Year"
-        },
-        {
-            "date": "2025-03-31",
-            "holiday": "Hari Raya Aidilfitri"
-        },
-        {
-            "date": "2025-04-01",
-            "holiday": "Hari Raya Aidilfitri Holiday"
-        },
-        {
-            "date": "2025-05-01",
-            "holiday": "Labour Day"
-        },
-        {
-            "date": "2025-05-12",
-            "holiday": "Wesak Day"
-        },
-        {
-            "date": "2025-06-02",
-            "holiday": "Birthday of SPB Yang di Pertuan Agong"
-        },
-        {
-            "date": "2025-06-07",
-            "holiday": "Hari Raya Haji"
-        },
-        {
-            "date": "2025-06-27",
-            "holiday": "Awal Muharram"
-        },
-        {
-            "date": "2025-08-31",
-            "holiday": "National Day"
-        },
-        {
-            "date": "2025-09-05",
-            "holiday": "Maulidur Rasul"
-        },
-        {
-            "date": "2025-09-15",
-            "holiday": "Malaysia Day Holiday"
-        },
-        {
-            "date": "2025-09-16",
-            "holiday": "Malaysia Day"
-        },
-        {
-            "date": "2025-12-25",
-            "holiday": "Christmas Day"
-        },
-        {
             "date": "2026-02-17",
-            "holiday": "Chinese New Year"
+            "holiday": "Chinese New Year",
+            "day": "Tuesday"
         },
         {
             "date": "2026-02-18",
-            "holiday": "Chinese New Year Holiday"
+            "holiday": "Chinese New Year Holiday",
+            "day": "Wednesday"
         },
         {
             "date": "2026-03-21",
-            "holiday": "Hari Raya Aidilfitri"
+            "holiday": "Hari Raya Aidilfitri",
+            "day": "Saturday"
         },
         {
             "date": "2026-03-22",
-            "holiday": "Hari Raya Aidilfitri Holiday"
+            "holiday": "Hari Raya Aidilfitri Holiday",
+            "day": "Sunday"
         },
         {
             "date": "2026-05-01",
-            "holiday": "Labour Day"
+            "holiday": "Labour Day",
+            "day": "Friday"
         },
         {
             "date": "2026-05-27",
-            "holiday": "Hari Raya Haji"
+            "holiday": "Hari Raya Haji",
+            "day": "Wednesday"
         },
         {
             "date": "2026-05-31",
-            "holiday": "Wesak Day"
+            "holiday": "Wesak Day",
+            "day": "Sunday"
         },
         {
             "date": "2026-06-01",
-            "holiday": "Birthday of SPB Yang di Pertuan Agong"
+            "holiday": "Birthday of SPB Yang di Pertuan Agong",
+            "day": "Monday"
         },
         {
             "date": "2026-06-17",
-            "holiday": "Awal Muharram"
+            "holiday": "Awal Muharram",
+            "day": "Wednesday"
         },
         {
             "date": "2026-08-25",
-            "holiday": "Maulidur Rasul"
+            "holiday": "Maulidur Rasul",
+            "day": "Tuesday"
         },
         {
             "date": "2026-08-31",
-            "holiday": "National Day"
+            "holiday": "National Day",
+            "day": "Monday"
         },
         {
             "date": "2026-09-16",
-            "holiday": "Malaysia Day"
+            "holiday": "Malaysia Day",
+            "day": "Wednesday"
         },
         {
             "date": "2026-12-25",
-            "holiday": "Christmas Day"
+            "holiday": "Christmas Day",
+            "day": "Friday"
         }
     ],
-    "updated_on": "2025-12-20T02:45:11"
+    "updated_on": "2026-01-02T09:34:13"
 }

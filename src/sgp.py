@@ -1,6 +1,5 @@
 import requests
-from datetime import datetime
-from functions import addMissingDayField, writeJsonIfChanged
+from functions import addMissingDayField, writeJsonIfChanged, createHolidayResult, getOutputPath
 
 def getSgHolidayData(datesetId:str) -> list:
   
@@ -16,6 +15,8 @@ def getSgHolidayData(datesetId:str) -> list:
 #singapore holiday source
 collection_id = 691          
 url = "https://api-production.data.gov.sg/v2/public/api/collections/{}/metadata".format(collection_id)
+country_alpha3_code = "SGP"
+outputPath = getOutputPath(country_alpha3_code)
         
 response = requests.get(url)
 
@@ -47,18 +48,17 @@ datas.sort(key=lambda row: row['date'])
 
 
 
-# Output to file in json format
-result = {
-  "source": url,
-  "country": "Singapore",
-  "countryAlpha2Code": "SG",
-  "countryAlpha3Code": "SGP",
-  "holidays": datas,
-  "updated_on": datetime.now().replace(microsecond=0).isoformat()
-}
+# Create standardised result dictionary
+result = createHolidayResult(
+  source_url=url,
+  country="Singapore",
+  country_alpha2_code="SG",
+  country_alpha3_code=country_alpha3_code,
+  holidays_data=datas
+)
 
 # Add missing day fields
 result = addMissingDayField(result)
 
 # Write JSON file only if data has changed
-writeJsonIfChanged(result, '../data/sgp.json')
+writeJsonIfChanged(result, outputPath)
