@@ -29,15 +29,12 @@ jobs:
         pip install -r requirements.txt
     
     - name: Run Python scripts
+      env:
+        # Optional: set repo secret DATA_GOV_SG_API_KEY for authenticated data.gov.sg calls
+        DATA_GOV_SG_API_KEY: ${{ secrets.DATA_GOV_SG_API_KEY }}
       run: |
-        cd src
-        # Find all Python scripts except test.py and functions.py
-        for script in *.py; do
-          if [ "$script" != "test.py" ] && [ "$script" != "functions.py" ]; then
-            echo "Running $script..."
-            python "$script"
-          fi
-        done
+        chmod +x ./run-all.sh
+        ./run-all.sh
     
     - name: Commit and push changes
       run: |

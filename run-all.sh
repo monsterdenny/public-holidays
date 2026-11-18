@@ -86,10 +86,10 @@ for script in *.py; do
   
   if python3 "$script"; then
     echo "✓ $script completed successfully"
-    ((success_count++))
+    success_count=$((success_count + 1))
   else
     echo "✗ $script failed with error"
-    ((error_count++))
+    error_count=$((error_count + 1))
   fi
   
   echo ""
@@ -104,4 +104,3 @@ echo ""
 if [ $error_count -gt 0 ]; then
   exit 1
 fi
-
